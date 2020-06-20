@@ -10,8 +10,6 @@ F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Ecommerce
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.csprojAssemblyReference.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.AssemblyInfoInputs.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.AssemblyInfo.cs
-F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.csproj.CoreCompileInputs.cache
-F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.RazorTargetAssemblyInfo.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\staticwebassets\Ecommerce.StaticWebAssets.Manifest.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\staticwebassets\Ecommerce.StaticWebAssets.xml
