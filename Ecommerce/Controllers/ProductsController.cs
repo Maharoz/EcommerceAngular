@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Ecommerce.Data;
+using Ecommerce.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Controllers
 {
@@ -10,16 +13,23 @@ namespace Ecommerce.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-        [HttpGet]
-        public string GetProducts()
+        private readonly StoreContext _context;
+        public ProductsController(StoreContext context)
         {
-            return "This will be a list of products";
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Product>>> GetProducts()
+        {
+            var products = await _context.Products.ToListAsync();
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public string GetsProduct()
+        public async Task<ActionResult<Product>> GetsProduct(int id)
         {
-            return "single product";
+            return await _context.Products.FindAsync(id);
         }
     }
 }
