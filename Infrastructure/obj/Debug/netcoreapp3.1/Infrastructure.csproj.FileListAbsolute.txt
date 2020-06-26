@@ -1,0 +1,12 @@
+F:\Angular-Projects\AngularEcommerce\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+F:\Angular-Projects\AngularEcommerce\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+F:\Angular-Projects\AngularEcommerce\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+F:\Angular-Projects\AngularEcommerce\Infrastructure\bin\Debug\netcoreapp3.1\Core.dll
+F:\Angular-Projects\AngularEcommerce\Infrastructure\bin\Debug\netcoreapp3.1\Core.pdb
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
