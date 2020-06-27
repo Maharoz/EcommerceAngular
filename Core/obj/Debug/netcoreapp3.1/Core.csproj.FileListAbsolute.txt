@@ -6,4 +6,3 @@ F:\Angular-Projects\AngularEcommerce\Core\obj\Debug\netcoreapp3.1\Core.AssemblyI
 F:\Angular-Projects\AngularEcommerce\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 F:\Angular-Projects\AngularEcommerce\Core\obj\Debug\netcoreapp3.1\Core.dll
 F:\Angular-Projects\AngularEcommerce\Core\obj\Debug\netcoreapp3.1\Core.pdb
-F:\Angular-Projects\AngularEcommerce\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
