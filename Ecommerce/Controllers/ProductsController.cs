@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Core.Interfaces;
 using Core.Specification;
 using Ecommerce.Data;
+using Ecommerce.Dtos;
 using Ecommerce.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -36,9 +37,20 @@ namespace Ecommerce.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetsProduct(int id)
+        public async Task<ActionResult<ProductToReturnDto>> GetsProduct(int id)
         {
-            return await _productRepo.GetByIdAsync(id);
+            var spec = new ProductsWithTypeAndNameSpecification(id);
+            var product = await _productRepo.GetEntityWithSpec(spec);
+            return new ProductToReturnDto
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price,
+                ProductBrand = product.ProductBrand.Name,
+                ProductType = product.ProductType.Name,
+
+            };
         }
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
