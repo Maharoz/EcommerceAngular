@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Core.Interfaces;
+using Core.Specification;
 using Ecommerce.Data;
 using Ecommerce.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +30,8 @@ namespace Ecommerce.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
-            var products = await _productRepo.ListAllAsync();
+            var spec = new ProductsWithTypeAndNameSpecification();
+            var products = await _productRepo.ListAsync(spec);
             return Ok(products);
         }
 
