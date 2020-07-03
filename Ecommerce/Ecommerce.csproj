@@ -23,5 +23,28 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\.DS_Store" />
+    <None Include="wwwroot\images\products\.DS_Store" />
+    <None Include="wwwroot\images\products\boot-ang1.png" />
+    <None Include="wwwroot\images\products\boot-ang2.png" />
+    <None Include="wwwroot\images\products\boot-core1.png" />
+    <None Include="wwwroot\images\products\boot-core2.png" />
+    <None Include="wwwroot\images\products\boot-redis1.png" />
+    <None Include="wwwroot\images\products\glove-code1.png" />
+    <None Include="wwwroot\images\products\glove-code2.png" />
+    <None Include="wwwroot\images\products\glove-react1.png" />
+    <None Include="wwwroot\images\products\glove-react2.png" />
+    <None Include="wwwroot\images\products\hat-core1.png" />
+    <None Include="wwwroot\images\products\hat-react1.png" />
+    <None Include="wwwroot\images\products\hat-react2.png" />
+    <None Include="wwwroot\images\products\sb-ang1.png" />
+    <None Include="wwwroot\images\products\sb-ang2.png" />
+    <None Include="wwwroot\images\products\sb-core1.png" />
+    <None Include="wwwroot\images\products\sb-core2.png" />
+    <None Include="wwwroot\images\products\sb-react1.png" />
+    <None Include="wwwroot\images\products\sb-ts1.png" />
+  </ItemGroup>
+
 
 </Project>
