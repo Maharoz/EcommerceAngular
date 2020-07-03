@@ -82,5 +82,4 @@ F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Swashbuck
 F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.csproj.CoreCompileInputs.cache
-F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cs
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cache
