@@ -6,6 +6,7 @@ using AutoMapper;
 using Core.Interfaces;
 using Ecommerce.Controllers;
 using Ecommerce.Data;
+using Ecommerce.Errors;
 using Ecommerce.Helpers;
 using Ecommerce.Middleware;
 using Infrastructure.Data;
@@ -40,6 +41,24 @@ namespace Ecommerce
             services.AddDbContext<StoreContext>(options =>
                options.UseSqlServer(
                    _config.GetConnectionString("DefaultConnection")));
+
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = actionContext =>
+                {
+                    var errors = actionContext.ModelState
+                    .Where(e => e.Value.Errors.Count > 0)
+                    .SelectMany(x => x.Value.Errors)
+                    .Select(x => x.ErrorMessage).ToArray();
+
+                    var errorResponse = new ApiValidationErrorReponse
+                    {
+                        Errors = errors
+                    };
+
+                    return new BadRequestObjectResult(errorResponse);
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
