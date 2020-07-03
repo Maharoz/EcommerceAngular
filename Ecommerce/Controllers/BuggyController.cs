@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Data;
+using Ecommerce.Errors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace Ecommerce.Controllers
             var thing = _context.Products.Find(42);
             if(thing == null)
             {
-                return NotFound();
+                return NotFound(new ApiResponse(404));
             }
             return Ok();
         }
@@ -39,7 +40,7 @@ namespace Ecommerce.Controllers
         [HttpGet("badrequest")]
         public ActionResult GetBadRequest()
         {
-            return GetBadRequest();
+            return BadRequest(new ApiResponse(400));
         }
 
         [HttpGet("badrequest/{id}")]
