@@ -7,6 +7,7 @@ using Core.Interfaces;
 using Ecommerce.Controllers;
 using Ecommerce.Data;
 using Ecommerce.Errors;
+using Ecommerce.Extensions;
 using Ecommerce.Helpers;
 using Ecommerce.Middleware;
 using Infrastructure.Data;
@@ -34,36 +35,16 @@ namespace Ecommerce
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddDbContext<StoreContext>(options =>
                options.UseSqlServer(
                    _config.GetConnectionString("DefaultConnection")));
 
-            services.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.InvalidModelStateResponseFactory = actionContext =>
-                {
-                    var errors = actionContext.ModelState
-                    .Where(e => e.Value.Errors.Count > 0)
-                    .SelectMany(x => x.Value.Errors)
-                    .Select(x => x.ErrorMessage).ToArray();
+            services.AddApplicationServices();
+            services.AddSwaggerDocumentation();
 
-                    var errorResponse = new ApiValidationErrorReponse
-                    {
-                        Errors = errors
-                    };
-
-                    return new BadRequestObjectResult(errorResponse);
-                };
-            });
-
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Ecommerce API", Version = "v1" });
-            });
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -84,9 +65,8 @@ namespace Ecommerce
             app.UseStaticFiles();
 
             app.UseAuthorization();
-
-            app.UseSwagger();
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ecommerce API v1"); });
+            app.UseSwaggerDocumentation();
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
