@@ -77,5 +77,10 @@ F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Core.pdb
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.csprojAssemblyReference.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\AutoMapper.dll
 F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.csproj.CoreCompileInputs.cache
+F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cs
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cache
