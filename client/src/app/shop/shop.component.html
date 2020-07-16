@@ -2,29 +2,35 @@
   <div class="row">
     <section class="col-3">
       <h5 class="text-warning ml-3">Sort</h5>
-      <select class="custom-select mb-3">
-        <option>Alphabetical</option>
-        <option>Price: Low to High</option>
-        <option>Price: High to Low</option>
+      <select
+        class="custom-select mb-3"
+        (change)="onSortSelected($event.target.value)"
+      >
+        <option *ngFor="let sort of sortOptions" [value]="sort.value">
+          {{ sort.name }}
+        </option>
       </select>
 
       <h5 class="text-warning ml-3">Brands</h5>
       <ul class="list-group my-3">
-        <li class="list-group-item" 
-        *ngFor="let brand of brands"
-        [class.active]="brand.id=== this.brandIdSelected"
-        [value]="brand.id"
-        (click)="onBrandSelected(brand.id)">
+        <li
+          class="list-group-item"
+          *ngFor="let brand of brands"
+          [class.active]="brand.id === this.brandIdSelected"
+          [value]="brand.id"
+          (click)="onBrandSelected(brand.id)"
+        >
           {{ brand.name }}
         </li>
       </ul>
       <h5 class="text-warning ml-3">Types</h5>
       <ul class="list-group my-3">
-        <li class="list-group-item" 
-        *ngFor="let type of types"
-        [class.active]="type.id=== this.typeIdSelected"
-        [value]="type.id"
-        (click)="onTypeSelected(type.id)"
+        <li
+          class="list-group-item"
+          *ngFor="let type of types"
+          [class.active]="type.id === this.typeIdSelected"
+          [value]="type.id"
+          (click)="onTypeSelected(type.id)"
         >
           {{ type.name }}
         </li>
@@ -52,6 +58,15 @@
           <app-product-item [product]="item"></app-product-item>
         </div>
       </div>
+      <pagination
+        [boundaryLinks]="true"
+        [totalItems]="77"
+        previousText="&lsaquo;"
+        nextText="&rsaquo;"
+        firstText="&laquo;"
+        lastText="&raquo;"
+      >
+      </pagination>
     </section>
   </div>
 </div>

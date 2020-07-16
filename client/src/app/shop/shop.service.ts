@@ -16,7 +16,7 @@ baseUrl='https://localhost:44358/api/';
 
    }
 
-   getProducts(brandId?:number,typeId?:number){
+   getProducts(brandId?:number,typeId?:number,sort?: string){
      let params = new HttpParams();
      if(brandId){
        params = params.append('brandId',brandId.toString());
@@ -26,6 +26,11 @@ baseUrl='https://localhost:44358/api/';
      if(typeId){
        params = params.append('typeId',typeId.toString());
 
+     }
+
+     if(sort){
+       params = params.append('sort',sort);
+       
      }
      return this.http.get<IPagination>(this.baseUrl +'products',{observe:'response',params})
      .pipe(
