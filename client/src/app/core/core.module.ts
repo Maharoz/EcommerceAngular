@@ -7,7 +7,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ServerErrorComponent } from './server-error/server-error.component';
 import {ToastrModule} from 'ngx-toastr';
 import { SetionHeaderComponent } from './setion-header/setion-header.component';
-
+import {BreadcrumbModule} from 'xng-breadcrumb';
 
 
 @NgModule({
@@ -15,6 +15,7 @@ import { SetionHeaderComponent } from './setion-header/setion-header.component';
   imports: [
     CommonModule,
     RouterModule,
+    BreadcrumbModule,
     ToastrModule.forRoot({
       positionClass:'toas-bottom-right',
       preventDuplicates:true
