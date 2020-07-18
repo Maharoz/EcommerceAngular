@@ -1,3 +1,20 @@
 <div class="container mt-5">
-    <h1>Internal Server Error</h1>
+  <h4>
+    Internal Server Error-refreshing the page will make exception dissapeare
+  </h4>
+  <ng-container *ngIf="error">
+    <h5 class="text-danger">Error:{{ error.message }}</h5>
+    <p class="font-weight-bold">
+      Note: if you are seeing this then angular is probably not responsible
+    </p>
+    <p>What to do next?</p>
+    <ol>
+      <li>Open chrome dev tool</li>
+      <li>Inspect the network tab</li>
+      <li>Check the falling request</li>
+      <li>Examine the request URL- make sure this is</li>
+  
+    </ol>
+  </ng-container>
+  
 </div>
