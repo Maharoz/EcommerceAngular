@@ -84,3 +84,10 @@ F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Swashbuck
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.csproj.CoreCompileInputs.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cache
 F:\Angular-Projects\AngularEcommerce\Ecommerce\obj\Debug\netcoreapp3.1\Ecommerce.MvcApplicationPartsAssemblyInfo.cs
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+F:\Angular-Projects\AngularEcommerce\Ecommerce\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll

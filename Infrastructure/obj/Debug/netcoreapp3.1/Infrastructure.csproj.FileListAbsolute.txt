@@ -9,3 +9,4 @@ F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infr
 F:\Angular-Projects\AngularEcommerce\Infrastructure\bin\Debug\netcoreapp3.1\Core.dll
 F:\Angular-Projects\AngularEcommerce\Infrastructure\bin\Debug\netcoreapp3.1\Core.pdb
 F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+F:\Angular-Projects\AngularEcommerce\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
