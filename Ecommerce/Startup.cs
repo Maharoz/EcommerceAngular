@@ -42,7 +42,7 @@ namespace Ecommerce
                options.UseSqlServer(
                    _config.GetConnectionString("DefaultConnection")));
 
-            services.AddSingleton<ConnectionMultiplexer>(c =>
+            services.AddSingleton<IConnectionMultiplexer>(c =>
             {
                 var configuration = ConfigurationOptions.Parse(_config.GetConnectionString("Redis"),
                     true);
