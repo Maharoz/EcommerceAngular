@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "eTK4veQ6pFqZ0KWURGZ9KgqQCtyO7eX8HePGdK/u6iIDem39SU0Dwbn1B8BndNZO6DYPTx1lW3UOS2Lz9uPFuw==",
+  "dgSpecHash": "JOQqN5I2T0RWo0MDnPF04vwujw5rJMHGcj0bCu7nW1AxffdFvM49KydilNs88jgc/8MR9EtNRiOzT+cn/GJUoQ==",
   "success": true,
   "projectFilePath": "F:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.6\\microsoft.aspnetcore.cryptography.internal.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.6\\microsoft.aspnetcore.cryptography.keyderivation.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.6\\microsoft.extensions.caching.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\microsoft.extensions.configuration.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.6\\microsoft.extensions.configuration.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.6\\microsoft.extensions.configuration.binder.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.6\\microsoft.extensions.dependencyinjection.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.6\\microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.6\\microsoft.extensions.identity.core.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.6\\microsoft.extensions.identity.stores.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.logging\\3.1.6\\microsoft.extensions.logging.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.6\\microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\microsoft.extensions.options.3.1.6.nupkg.sha512",
+    "C:\\Users\\DOLPHIN\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512"
+  ],
   "logs": []
 }
