@@ -11,6 +11,7 @@ using Ecommerce.Extensions;
 using Ecommerce.Helpers;
 using Ecommerce.Middleware;
 using Infrastructure.Data;
+using Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -41,6 +42,10 @@ namespace Ecommerce
             services.AddDbContext<StoreContext>(options =>
                options.UseSqlServer(
                    _config.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppIdentityDBContext>(x =>
+            {
+                x.UseSqlServer(_config.GetConnectionString("IdentityConnection"));
+            });
 
             services.AddSingleton<IConnectionMultiplexer>(c =>
             {
