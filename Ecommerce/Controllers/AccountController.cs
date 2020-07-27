@@ -1,4 +1,5 @@
 ﻿using Core.Entities;
+using Core.Interfaces;
 using Ecommerce.Dtos;
 using Ecommerce.Errors;
 using Microsoft.AspNetCore.Identity;
@@ -14,11 +15,15 @@ namespace Ecommerce.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly ITokenService _tokenService;
 
-        public AccountController(UserManager<AppUser> userManger,SignInManager<AppUser> signInManager)
+        public AccountController(UserManager<AppUser> userManger
+            ,SignInManager<AppUser> signInManager,
+            ITokenService tokenService)
         {
             _userManager = userManger;
             _signInManager = signInManager;
+            _tokenService = tokenService;
         }
 
         [HttpPost("login")]
@@ -37,7 +42,7 @@ namespace Ecommerce.Controllers
             return new UserDto
             {
                 Email = user.Email,
-                Token = "This will be a token",
+                Token = _tokenService.CreateToken(user),
                 DisplayName = user.DisplayName
 
             };
@@ -60,7 +65,7 @@ namespace Ecommerce.Controllers
             return new UserDto
             {
                 DisplayName = user.DisplayName,
-                Token = "This will be a token",
+                Token = _tokenService.CreateToken(user),
                 Email = user.Email
             };
 

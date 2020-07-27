@@ -55,7 +55,7 @@ namespace Ecommerce
             });
 
             services.AddApplicationServices();
-            services.AddIdentityServices();
+            services.AddIdentityServices(_config);
             services.AddSwaggerDocumentation();
             services.AddCors(opt =>
             {
@@ -85,7 +85,7 @@ namespace Ecommerce
             app.UseRouting();
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");
-
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSwaggerDocumentation();
             
