@@ -2,6 +2,7 @@
 using Core.Interfaces;
 using Ecommerce.Dtos;
 using Ecommerce.Errors;
+using Ecommerce.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -32,10 +33,9 @@ namespace Ecommerce.Controllers
         [HttpGet]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
-            var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email)?
-                .Value;
+           
 
-            var user = await _userManager.FindByEmailAsync(email);
+            var user = await _userManager.FindByEmailFromClaimsPrinciple(HttpContext.User);
             return new UserDto
             {
                 Email = user.Email,
@@ -55,10 +55,10 @@ namespace Ecommerce.Controllers
         [HttpGet("address")]
         public async Task<ActionResult<Address>> GetUserAddress()
         {
-            var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email)?
-               .Value;
+            //var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email)?
+            //   .Value;
 
-            var user = await _userManager.FindByEmailAsync(email);
+            var user = await _userManager.FindByClaimsPrincipleWithAddress(HttpContext.User);
 
             return user.Address;
         }
