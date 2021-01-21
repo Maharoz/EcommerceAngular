@@ -2,11 +2,13 @@
 using Core.Interfaces;
 using Ecommerce.Dtos;
 using Ecommerce.Errors;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Ecommerce.Controllers
@@ -25,6 +27,43 @@ namespace Ecommerce.Controllers
             _signInManager = signInManager;
             _tokenService = tokenService;
         }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<ActionResult<UserDto>> GetCurrentUser()
+        {
+            var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email)?
+                .Value;
+
+            var user = await _userManager.FindByEmailAsync(email);
+            return new UserDto
+            {
+                Email = user.Email,
+                Token = _tokenService.CreateToken(user),
+                DisplayName = user.DisplayName
+
+            };
+        }
+
+        [HttpGet("emailexists")]
+        public async Task<ActionResult<bool>> CheckEmailExistsAsync([FromQuery] string email)
+        {
+            return await _userManager.FindByEmailAsync(email) != null;
+        }
+
+
+        [HttpGet("address")]
+        public async Task<ActionResult<Address>> GetUserAddress()
+        {
+            var email = HttpContext.User?.Claims?.FirstOrDefault(x => x.Type == ClaimTypes.Email)?
+               .Value;
+
+            var user = await _userManager.FindByEmailAsync(email);
+
+            return user.Address;
+        }
+
+
 
         [HttpPost("login")]
         public async Task<ActionResult<UserDto>>Login(LoginDto loginDto)
@@ -70,5 +109,7 @@ namespace Ecommerce.Controllers
             };
 
         }
+
+   
     }
 }

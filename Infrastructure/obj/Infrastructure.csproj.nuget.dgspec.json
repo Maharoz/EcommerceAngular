@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj": {}
+    "G:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "F:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj": {
+    "G:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj",
+        "projectUniqueName": "G:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "F:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\DOLPHIN\\.nuget\\packages\\",
-        "outputPath": "F:\\Angular-Projects\\AngularEcommerce\\Core\\obj\\",
+        "projectPath": "G:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\CEL\\.nuget\\packages\\",
+        "outputPath": "G:\\Angular-Projects\\AngularEcommerce\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DOLPHIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +43,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.Extensions.Identity.Stores": {
               "target": "Package",
@@ -63,25 +65,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj": {
+    "G:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "G:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "F:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\DOLPHIN\\.nuget\\packages\\",
-        "outputPath": "F:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\obj\\",
+        "projectPath": "G:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\CEL\\.nuget\\packages\\",
+        "outputPath": "G:\\Angular-Projects\\AngularEcommerce\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DOLPHIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -94,9 +96,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "F:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj": {
-                "projectPath": "F:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj"
+              "G:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj": {
+                "projectPath": "G:\\Angular-Projects\\AngularEcommerce\\Core\\Core.csproj"
               }
             }
           }
@@ -109,6 +112,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
@@ -158,7 +162,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
