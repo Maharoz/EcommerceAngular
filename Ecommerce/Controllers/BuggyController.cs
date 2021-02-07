@@ -51,12 +51,12 @@ namespace Ecommerce.Controllers
             return BadRequest(new ApiResponse(400));
         }
 
-        [HttpGet("testauth")]
-        [Authorize]
-        public ActionResult<string> GetSecretText()
-        {
-            return "secret stuff";
-        }
+     //   [HttpGet("testauth")]
+      //  [Authorize]
+     //   public ActionResult<string> GetSecretText()
+     //   {
+      //      return "secret stuff";
+     //   }
 
         [HttpGet("badrequest/{id}")]
         public ActionResult GetNotFoundRequest(int id)
